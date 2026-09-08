@@ -30,3 +30,10 @@ class Solution:
             q-=1
         
         return nums
+
+w = Solution()
+
+print(w.nextPermutation([1,2,3]))
+print(w.nextPermutation([2,3,1]))
+print(w.nextPermutation([2,3,6,5,4,1]))
+print(w.nextPermutation([3,2,1]))
