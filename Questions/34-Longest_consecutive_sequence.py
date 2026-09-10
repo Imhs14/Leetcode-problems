@@ -6,6 +6,7 @@ class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
         s = set(nums)
         longest = 0 
+        print(s)
         for num in s:
             if num - 1 not in s:
                 next_num = num + 1
@@ -15,6 +16,9 @@ class Solution:
                     next_num += 1
                 longest = max(longest, length)
         return longest
+
+p = Solution()
+print(p.longestConsecutive([100,4,200,1,3,2]))
 # Time = O(n), Space = O(n)
 """
 nums = [100,4,200,1,3,2]
